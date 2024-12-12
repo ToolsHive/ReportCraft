@@ -38,5 +38,3 @@ jobs:
           branch: gh-pages 
           clean: true 
           token: ${{ secrets.GITHUB_TOKEN }}
-          allow-fork: true
-          force-orphan: true
