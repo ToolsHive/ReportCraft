@@ -1,0 +1,27 @@
+# Dependabot configuration file for keeping dependencies up-to-date 🛠️
+version: 2
+
+updates:
+  # NPM packages updates 🌐
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    allow:
+      - dependency-type: "all"
+    commit-message:
+      prefix: "npm-update"
+      include: "scope"
+    labels: ["dependencies", "npm"]
+
+  # GitHub Actions updates 🚀
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    allow:
+      - dependency-type: "all"
+    commit-message:
+      prefix: "gh-actions-update"
+      include: "scope"
+    labels: ["dependencies", "github-actions"]
